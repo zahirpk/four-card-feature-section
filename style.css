@@ -1,0 +1,158 @@
+:root {
+    /* Primary Color */
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+
+    /* Natural Color */
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 4%, 73%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=Poppins:wght@200;400;600&family=Raleway&family=Red+Hat+Display:ital@1&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(255, 255, 255);
+
+}
+
+header {
+    text-align: center;
+    margin: 2rem;
+}
+
+.title-text-1 {
+
+    color: var(--Grayish-Blue);
+    margin-top: 3rem;
+    font-weight: 200;
+    font-size: 1.5rem;
+}
+
+.title-text-2 {
+
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.title-para {
+
+    font-size: 1rem;
+    margin: 1rem;
+    color: var(--Very-Light-Gray);
+}
+
+.flex-container {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-title {
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.container-description {
+    margin-top: 0.5rem;
+    margin-bottom: 3.5rem;
+    margin-left: 1.5rem;
+    margin-right: 3.5rem;
+    color: var(--Grayish-Blue);
+}
+
+.box {
+    position: relative;
+    height: 15rem;
+    width: 90vw;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0px 4px 7px -4px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 4px 7px -4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 4px 7px -4px rgba(0, 0, 0, 0.75);
+}
+
+hr {
+    height: 5px;
+    width: 100%;
+}
+.supervisor-container {
+    background-color: var(--Cyan);
+}
+.team-container {
+    background-color: var(--Red);
+}
+.karma-container {
+    background-color: var(--Orange);
+}
+.Calculator-container {
+    background-color: var(--Blue);
+}
+img {
+
+    width: 10vw;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+/* Media Query */
+
+@media(min-width:40em) {
+
+    .title-para {
+
+        margin-left: 3.5rem;
+        margin-right: 2.5rem;
+        text-align: justify;
+    }
+    .box {
+        width: 70vw;
+    }
+}
+
+/* Media Query for larger screen  */
+
+@media(min-width:60em) {
+
+    .flex-container {
+        flex-direction: row;
+    }
+
+    .title-text-1 {
+        font-size: 2.5rem;
+    }
+    .title-text-2 {
+        font-size: 2.5rem;
+    }
+    .title-para {
+        font-size: 1rem;
+        margin-left: 32vw;
+        margin-right: 30vw;
+        text-align: center;
+    }
+    .box {
+
+        width: 350px;
+        margin: 0.5rem;
+    }
+    img {
+        width: 4vw;
+    }
+}
