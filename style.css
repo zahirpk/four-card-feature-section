@@ -8,7 +8,7 @@
     /* Natural Color */
     --Very-Dark-Blue: hsl(234, 12%, 34%);
     --Grayish-Blue: hsl(229, 6%, 66%);
-    --Very-Light-Gray: hsl(0, 4%, 73%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=Poppins:wght@200;400;600&family=Raleway&family=Red+Hat+Display:ital@1&display=swap');
@@ -22,7 +22,7 @@
 body {
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--Very-Light-Gray);
 
 }
 
@@ -49,7 +49,7 @@ header {
 
     font-size: 1rem;
     margin: 1rem;
-    color: var(--Very-Light-Gray);
+    color: var(--Grayish-Blue);
 }
 
 .flex-container {
